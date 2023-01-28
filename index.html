@@ -8,79 +8,236 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <main>
-    <section>
-      Social Media Dashboard
-      Total Followers: 23,004
+<body class="font-Inter font-bold text-[0.875rem] bg-[var(--neutral-bg-blue)] bg-contain">
+  <header class="grid bg-[var(--neutral-top-bg-blue)] px-6 pt-10 pb-24 rounded-b-lg lg:flex lg:items-center lg:justify-between lg:px-36 lg:pb-48">
 
-      Dark Mode
+    <div>
+    <h1 class="text-2xl text-[var(--neutral-white)]">Social Media Dashboard</h1>
+    <p class="text-base text-[var(--neutral-text-grey)]">Total Followers: 23,004</p>
+    <span class="lg:hidden block border-t border-solid border-[var(--neutral-text-grey)] my-8"></span>
+  </div>
+
+    <div class="flex items-center max-lg:justify-between lg:gap-4">
+      <p class="text-base text-[var(--neutral-text-grey)]">Dark Mode</p>
+      <div class="flex items-center">
+        <div class="toggle-btn w-12 h-6 p-1 bg-gradient-to-r from-[var(--toggle-l)] to-[var(--toggle-r)] rounded-full">
+          <div
+            class="inner-circle w-4 h-4 transition-all duration-200 rounded-full bg-[var(--neutral-bg-blue)] cursor-pointer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="relative">
+    <section class="grid gap-12 px-6 pb-12 lg:px-36 absolute -top-16 w-full lg:-top-32">
+
+      <div class="grid gap-8 lg:grid-cols-4">
+
+        <div
+          class="grid place-items-center bg-[var(--neutral-card-bg-blue)] rounded-md py-6 border-t-4 border-[var(--primary-FB)]">
+          <div class="flex items-center gap-2 mb-6">
+            <img src="images/icon-facebook.svg" alt="Facebook">
+            <p class="text-base text-[var(--neutral-text-grey)]">@nathanf</p>
+          </div>
+          <p class="text-6xl text-[var(--neutral-white)] mb-2">1987</p>
+          <p class="text-base uppercase tracking-[0.3em] font-normal text-[var(--neutral-text-grey)] mb-6">Followers</p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-up.svg" alt="" aria-hidden="">
+            <p class="text-[var(--primary-lime)]">12 Today</p>
+          </div>
+        </div>
+
+        <div
+          class="grid place-items-center bg-[var(--neutral-card-bg-blue)] rounded-md py-6 border-t-4 border-[var(--primary-Twit)]">
+          <div class="flex items-center gap-2 mb-6">
+            <img src="images/icon-twitter.svg" alt="Twitter">
+            <p class="text-base text-[var(--neutral-text-grey)]">@nathanf</p>
+          </div>
+          <p class="text-6xl text-[var(--neutral-white)] mb-2">1044</p>
+          <p class="text-base uppercase tracking-[0.3em] font-normal text-[var(--neutral-text-grey)] mb-6">Followers</p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-up.svg" alt="" aria-hidden="">
+            <p class="text-[var(--primary-lime)]">99 Today</p>
+          </div>
+        </div>
+
+        <div class="inst grid place-items-center bg-[var(--neutral-card-bg-blue)] rounded-md py-6 border-t-4">
+          <div class="flex items-center gap-2 mb-6">
+            <img src="images/icon-instagram.svg" alt="Instagram">
+            <p class="text-base text-[var(--neutral-text-grey)]">@realnathanf</p>
+          </div>
+          <p class="text-6xl text-[var(--neutral-white)] mb-2">11k</p>
+          <p class="text-base uppercase tracking-[0.3em] font-normal text-[var(--neutral-text-grey)] mb-6">Followers</p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-up.svg" alt="" aria-hidden="">
+            <p class="text-[var(--primary-lime)]">1099 Today</p>
+          </div>
+        </div>
+
+        <div
+          class="grid place-items-center bg-[var(--neutral-card-bg-blue)] rounded-md py-6 border-t-4 border-[var(--primary-Yout)]">
+          <div class="flex items-center gap-2 mb-6">
+            <img src="images/icon-youtube.svg" alt="Youtube">
+            <p class="text-base text-[var(--neutral-text-grey)]">Nathan F.</p>
+          </div>
+          <p class="text-6xl text-[var(--neutral-white)] mb-2">8239</p>
+          <p class="text-base uppercase tracking-[0.3em] font-normal text-[var(--neutral-text-grey)] mb-6">Subscribers
+          </p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-down.svg" alt="" aria-hidden="">
+            <p class="text-[var(--primary-red)]">144 Today</p>
+          </div>
+        </div>
 
 
+      </div>
 
-      @nathanf
-      1987
-      Followers
-      12 Today
+      <div class="grid gap-10">
+        <h2 class="text-2xl text-[var(--neutral-white)]">Overview - Today</h2>
 
-      @nathanf
-      1044
-      Followers
-      99 Today
+        <div class="grid gap-4 lg:grid-cols-4">
 
-      @realnathanf
-      11k
-      Followers
-      1099 Today
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
 
-      Nathan F.
-      8239
-      Subscribers
-      144 Today
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Page Views</p>
+              <img src="images/icon-facebook.svg" alt="Facebook">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">87</p>
 
+              <div class="flex items-center gap-1">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-lime)]">3%</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
 
-      Overview - Today
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Likes</p>
+              <img src="images/icon-facebook.svg" alt="Facebook">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">52</p>
 
-      Page Views
-      87
-      3%
+              <div class="flex items-center gap-1">
+                <img src="images/icon-down.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-red)]">2%</p>
+              </div>
+            </div>
+          </div>
 
-      Likes
-      52
-      2%
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
 
-      Likes
-      5462
-      2257%
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Likes</p>
+              <img src="images/icon-instagram.svg" alt="Instagram">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">5462</p>
 
-      Profile Views
-      52k
-      1375%
+              <div class="flex items-center gap-1">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-lime)]">2257%</p>
+              </div>
+            </div>
+          </div>
 
-      Retweets
-      117
-      303%
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
 
-      Likes
-      507
-      553%
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Profile Views</p>
+              <img src="images/icon-instagram.svg" alt="Instagram">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">52k</p>
 
-      Likes
-      107
-      19%
+              <div class="flex items-center gap-1">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-lime)]">1375%</p>
+              </div>
+            </div>
+          </div>
 
-      Total Views
-      1407
-      12%
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
+
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Retweets</p>
+              <img src="images/icon-twitter.svg" alt="Twitter">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">117</p>
+
+              <div class="flex items-center gap-1">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-lime)]">303%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
+
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Likes</p>
+              <img src="images/icon-twitter.svg" alt="Twitter">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">507</p>
+
+              <div class="flex items-center gap-1">
+                <img src="images/icon-up.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-lime)]">553%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
+
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Likes</p>
+              <img src="images/icon-youtube.svg" alt="Youtube">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">107</p>
+
+              <div class="flex items-center gap-1">
+                <img src="images/icon-down.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-red)]">19%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-8 bg-[var(--neutral-card-bg-blue)] rounded-md p-8">
+
+            <div class="flex items-center justify-between">
+              <p class="text-base text-[var(--neutral-text-grey)]">Total Views</p>
+              <img src="images/icon-youtube.svg" alt="Youtube">
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-3xl text-[var(--neutral-white)]">1407</p>
+
+              <div class="flex items-center gap-1">
+                <img src="images/icon-down.svg" alt="" aria-hidden="true">
+                <p class="text-[var(--primary-red)]">12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>

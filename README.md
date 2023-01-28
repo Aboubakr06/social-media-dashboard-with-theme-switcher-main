@@ -34,7 +34,7 @@ Users should be able to:
 ![photo](./design/desktop-design-dark.jpg)
 ![photo](./design/active-states-dark.jpg)
 ![photo](./design/desktop-design-light.jpg)
-![photo](./design/active-states-light.jpg
+![photo](./design/active-states-light.jpg)
 
 ### Links
 
