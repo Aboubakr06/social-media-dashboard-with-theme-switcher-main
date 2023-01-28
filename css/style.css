@@ -793,6 +793,7 @@ video {
   --neutral-bg-blue:      hsl(230, 17%, 14%);
   --neutral-top-bg-blue:  hsl(232, 19%, 15%);
   --neutral-card-bg-blue: hsl(228, 28%, 20%);
+  --neutral-card-bg-hover: hsl(228, 28%, 30%);
   --neutral-text-grey:    hsl(228, 34%, 66%);
   --neutral-white:        hsl(0, 0%, 100%);
 }
@@ -805,6 +806,10 @@ video {
   -o-border-image:  var(--primary-Inst);
      border-image:  var(--primary-Inst);
   border-image-slice: 1;
+}
+
+.hover\:bg-\[var\(--neutral-card-bg-hover\)\]:hover {
+  background-color: var(--neutral-card-bg-hover);
 }
 
 @media not all and (min-width: 1024px) {

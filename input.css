@@ -17,6 +17,7 @@
     --neutral-bg-blue:      hsl(230, 17%, 14%);
     --neutral-top-bg-blue:  hsl(232, 19%, 15%);
     --neutral-card-bg-blue: hsl(228, 28%, 20%);
+    --neutral-card-bg-hover: hsl(228, 28%, 30%);
     --neutral-text-grey:    hsl(228, 34%, 66%);
     --neutral-white:        hsl(0, 0%, 100%);
 }
