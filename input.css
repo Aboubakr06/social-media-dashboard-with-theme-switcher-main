@@ -26,6 +26,6 @@
 }
 
 .inst {
-    border-image: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+    border-image:  var(--primary-Inst);
     border-image-slice: 1;
 }

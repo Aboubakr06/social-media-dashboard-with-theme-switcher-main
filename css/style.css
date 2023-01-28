@@ -802,8 +802,8 @@ video {
 }
 
 .inst {
-  -o-border-image: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
-     border-image: linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+  -o-border-image:  var(--primary-Inst);
+     border-image:  var(--primary-Inst);
   border-image-slice: 1;
 }
 
