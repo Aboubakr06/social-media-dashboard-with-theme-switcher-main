@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/)
+- Solution URL: (https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-with-tailwindcss-eqE5RmnH-d)
 - Live Site URL: (https://frabjous-sherbet-a1439d.netlify.app/)
 
 ## My process
